@@ -13,7 +13,7 @@ import ru.kata.spring.boot_security.demo.model.User;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    private UserDao userDao;
+    private final UserDao userDao;
 
     @Autowired
     public UserDetailsServiceImpl(UserDao userDao) {
