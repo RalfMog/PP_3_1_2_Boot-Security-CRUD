@@ -14,7 +14,7 @@ import ru.kata.spring.boot_security.demo.model.User;
 @RequestMapping("/user")
 public class UserController {
 
-    private UserDetailsService userDetailsService;
+    private final UserDetailsService userDetailsService;
 
     @Autowired
     public UserController(UserDetailsService userDetailsService) {
